@@ -5,6 +5,14 @@ st.set_page_config(
     page_icon="👋",
 )
 
+pages_manager = st.navigation(
+    [
+        st.Page("pages/plot.py"),
+        st.Page("pages/map.py"),
+    ]
+    )
+
+pages_manager.run()
 st.write("# Welcome to Streamlit! 👋")
 
 st.sidebar.success("Select a demo above.")
